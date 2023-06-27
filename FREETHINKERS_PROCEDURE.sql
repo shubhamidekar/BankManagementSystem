@@ -1,3 +1,5 @@
+-- This procedure is for Amount transfer using account number of banks and has been refined to detect low balance or account permissions. 
+
 create or replace PROCEDURE MAKE_TRANSACTION(AMOUNT NUMBER,
                                                 DEBIT_ACC IN ACCOUNTS.ACCOUNT_NO%TYPE,
                                                 CREDIT_ACC IN ACCOUNTS.ACCOUNT_NO%TYPE) AS
